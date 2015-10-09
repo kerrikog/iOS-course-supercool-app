@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="supercool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iPhone-6-wallpapers-backgrounds-iphone6-wallpapers-backgrounds-40" translatesAutoresizingMaskIntoConstraints="NO" id="jJq-5o-s4S">
+                                <rect key="frame" x="-87" y="-122" width="445" height="814"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Boom--Super-Cool--0" translatesAutoresizingMaskIntoConstraints="NO" id="Xz3-WQ-3Jb">
+                                <rect key="frame" x="11" y="420" width="325" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByV-9z-ZTH">
+                                <rect key="frame" x="50" y="268" width="221" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Make Me Super Cool!  ">
+                                    <color key="titleColor" red="0.62745100259999997" green="0.02745098248" blue="0.57254904510000004" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeMeCool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dI4-Bg-LNB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="coolBG" destination="jJq-5o-s4S" id="GuI-Dp-UZ5"/>
+                        <outlet property="coollogo" destination="Xz3-WQ-3Jb" id="ivV-Ik-qIB"/>
+                        <outlet property="unCoolButton" destination="ByV-9z-ZTH" id="GNb-43-7Lm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="365" y="203"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Boom--Super-Cool--0" width="366" height="72"/>
+        <image name="iPhone-6-wallpapers-backgrounds-iphone6-wallpapers-backgrounds-40" width="640" height="960"/>
+    </resources>
+</document>
